@@ -1,0 +1,84 @@
+/* Container for the About page */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Main heading */
+  .about-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheadings */
+  .about-container h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs */
+  .about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* List styling */
+  .about-container ul {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+  }
+  
+  .about-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Links */
+  .about-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image Styling */
+  .about-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+    }
+  
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  
+    .about-container ul li {
+      font-size: 1rem;
+    }
+  }
+  
