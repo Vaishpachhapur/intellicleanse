@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /**
  * Footer component for the landing page.
@@ -12,16 +13,18 @@ import React from "react";
  */
 const Footer = () => {
   const footerStyle = {
-    backgroundColor: "#fff", // White background
+    backgroundColor: "rgba(255, 255, 255, 0.8)", // White background with transparency
     color: "#000", // Black text
     textAlign: "center",
-    padding: "20px",
+    padding: "2px",
     position: "fixed",
     bottom: 0,
     width: "100%",
     fontFamily: "Arial, sans-serif",
     fontSize: "14px",
-    borderTop: "1px solid #ddd", // Subtle border for separation
+    // borderTop: "1px solid rgba(221, 221, 221, 0.8)", // Subtle border with transparency
+    backdropFilter: "blur(10px)", // Adds a blur effect for better readability
+    zIndex: 1000, // Ensures it stays on top of other content
   };
 
   const linkStyle = {
@@ -41,24 +44,15 @@ const Footer = () => {
     <footer style={footerStyle}>
       <p>
         &copy; {new Date().getFullYear()} Intellicleanse. All rights reserved.
-        {/* <a
-          href="#about"
-          style={linkStyle}
-          onMouseEnter={(e) => (e.target.style.color = linkHoverStyle.color)}
-          onMouseLeave={(e) => (e.target.style.color = linkStyle.color)}
-        >
-          About
-        </a> */}
-        <br/>
-        
-        <a
-          href="#contact"
+        <br />
+        <Link
+          to="/contact"
           style={linkStyle}
           onMouseEnter={(e) => (e.target.style.color = linkHoverStyle.color)}
           onMouseLeave={(e) => (e.target.style.color = linkStyle.color)}
         >
           Contact
-        </a>
+        </Link>
       </p>
     </footer>
   );

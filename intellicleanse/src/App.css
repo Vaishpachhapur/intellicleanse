@@ -1,9 +1,10 @@
+/* Media query for small screens (max-width: 400px) */
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
     width: 111%;
+    font-size: 14px; /* Slightly smaller font size for better readability */
   }
-  #about,
   #about,
   #footer,
   #header,
@@ -11,9 +12,64 @@
   #navigation,
   #signup {
     width: 111%;
+    padding: 10px 20px; /* Added padding for better spacing */
+    font-size: 16px;
   }
 
   #portfolio {
     width: 110%;
+    padding: 15px; /* Added padding for better spacing */
   }
+}
+
+/* Floating content with added transitions */
+.floating-content {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6f61; /* More vibrant color for a creative feel */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  font-size: 18px; /* Increased font size for readability */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  transform: translateY(10px); /* Initial downward position */
+}
+
+/* Hover effect with scaling */
+.floating-content:hover {
+  background-color: #d65b47; /* Darker, richer shade on hover */
+  cursor: pointer;
+  transform: translateY(0); /* Smoothly moves it up */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+}
+
+/* Optional media query for medium screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .floating-content {
+    bottom: 15px; /* Slightly higher for medium screens */
+    right: 15px; /* Reduced distance from the right side */
+  }
+}
+
+/* Close button styling */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px; /* Increased font size for better visibility */
+  cursor: pointer;
+  margin-left: 15px;
+  transition: transform 0.3s ease; /* Added transformation for smooth interaction */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+  transform: rotate(90deg); /* Adds a rotating effect on hover */
+  color: #d65b47; /* Changes to a contrasting color when hovered */
 }

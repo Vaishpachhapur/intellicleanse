@@ -1,0 +1,21 @@
+.collaborative-cleaning {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f5faff; /* Light blue background */
+  border: 1px solid #cce4f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.collaborative-cleaning h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2b6ca3;
+}
+
+.collaborative-cleaning p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}

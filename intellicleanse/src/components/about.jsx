@@ -13,17 +13,17 @@ import "./about.css";
  */
 const About = () => {
   return (
-    
-
+    <div>
+      <br/><br/>
     <div className="about-container">
-        <br/>
-        <br/>
-        <br/>
+      <br/>
       <h1>About Intellicleanse</h1>
 
-      {/* Image Section 
-      <img src="/img/testimonials/about.jpg" alt="Intellicleanse" />
-*/}
+      {/* Image Section */}
+      {/* <div className="about-image">
+        <img src="/img/testimonials/about.jpg" alt="Intellicleanse" />
+      </div> */}
+
       <p>
         Welcome to <strong>Intellicleanse</strong>, your ultimate solution for efficient and intelligent data cleansing.
         Our platform is designed to streamline the process of preparing raw datasets for analysis by addressing
@@ -37,7 +37,7 @@ const About = () => {
       </p>
 
       <h2>Key Features</h2>
-      <ul>
+      <ul className="features-list">
         <li>Effortless data upload and profiling</li>
         <li>Advanced duplicate removal and missing value imputation</li>
         <li>Outlier detection with interactive visualizations</li>
@@ -49,8 +49,9 @@ const About = () => {
 
       <h2>Get in Touch</h2>
       <p>
-        Have questions or want to learn more? Reach out to us through our <a href="#contact">Contact</a> page. We'd love to hear from you!
+        Have questions or want to learn more? Reach out to us through our <a href="/contact">Contact</a> page. We'd love to hear from you!
       </p>
+      </div>
     </div>
   );
 };

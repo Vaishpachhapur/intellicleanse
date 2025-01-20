@@ -1,0 +1,21 @@
+.data-standardization {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #e8f9e4; /* Light green background */
+  border: 1px solid #b8e2b1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.data-standardization h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #326b31;
+}
+
+.data-standardization p {
+  font-size: 1.2rem;
+  color: #555;
+}

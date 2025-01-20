@@ -1,84 +1,171 @@
 /* Container for the About page */
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background: linear-gradient(135deg, #a2c2e4, #ffffff); /* Light blue to white gradient */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow for better elevation */
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+/* Main heading */
+.about-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #003366; /* Darker blue for contrast */
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: slideIn 1s ease-out; /* Sliding in effect */
+}
+
+/* Subheadings */
+.about-container h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  animation: fadeIn 2s ease-out; /* Fade-in effect */
+}
+
+/* Paragraphs */
+.about-container p {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.8;
+  color: #555;
+  opacity: 0; /* Initial opacity for fade-in effect */
+  animation: fadeInText 2s ease-in-out forwards; /* Text fade-in */
+}
+
+/* List styling */
+.about-container ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.features-list li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Add an animated icon or bullet to each list item */
+.features-list li::before {
+  content: "✔"; /* Custom bullet */
+  position: absolute;
+  left: 0;
+  color: #0056b3;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+/* Hover effect on list items */
+.features-list li:hover {
+  transform: translateX(10px); /* Slide the list item to the right */
+  color: #007bff; /* Change text color on hover */
+}
+
+/* Links */
+.about-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Image Styling */
+.about-container .about-image {
+  position: relative;
+  margin: 25px 0;
+  animation: scaleUp 1s ease-out; /* Scale effect on the image */
+}
+
+.about-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
   }
-  
-  /* Main heading */
+
   .about-container h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
   }
-  
-  /* Subheadings */
+
   .about-container h2 {
-    font-size: 1.8rem;
-    color: #0056b3;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
   }
-  
-  /* Paragraphs */
+
   .about-container p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1rem;
   }
-  
-  /* List styling */
-  .about-container ul {
-    margin: 10px 0 20px 20px;
-    padding: 0;
-  }
-  
+
   .about-container ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
-  
-  /* Links */
-  .about-container a {
-    color: #007bff;
-    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .about-container a:hover {
-    text-decoration: underline;
+  100% {
+    opacity: 1;
   }
-  
-  /* Image Styling */
-  .about-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-container {
-      padding: 10px;
-    }
-  
-    .about-container h1 {
-      font-size: 2rem;
-    }
-  
-    .about-container h2 {
-      font-size: 1.6rem;
-    }
-  
-    .about-container p {
-      font-size: 1rem;
-    }
-  
-    .about-container ul li {
-      font-size: 1rem;
-    }
+  100% {
+    transform: translateX(0);
   }
-  
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

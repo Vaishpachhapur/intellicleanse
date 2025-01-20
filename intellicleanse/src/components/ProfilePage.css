@@ -1,0 +1,44 @@
+.profile-page {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.profile-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #45a049;
+}
+
+.profile-form p {
+  font-size: 16px;
+  color: #555;
+}
